@@ -1,0 +1,4 @@
+POST http://localhost:4004/catalog/userInfo
+Content-Type: application/json
+
+{"ID": 1, "Name": "Austin", "MailId": "austinjdaj.sap@gmail.com", "MobileNo": "9543442424", "SAPUserId": "P1942969247"}
