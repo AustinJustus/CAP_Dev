@@ -1,0 +1,72 @@
+<mvc:View
+    controllerName="userregistrationportal.controller.SignUp"
+xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <VBox class="sapUiSmallMargin">
+                            <!-- binding="{path : '/userInfo(ID=1)', parameters : {$$updateGroupId : 'myGroup'}}" -->
+                            <!-- <VBox class="sapUiSmallMargin">
+                            <f:SimpleForm id="SF" binding="{path : '/userInfo', parameters : {$$updateGroupId : 'myGroup'}}" layout="ResponsiveGridLayout" title="Basic Info" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                <f:content>
+                                    <Label text="Name" />
+                                    <Input id="name" value="{Name}"/>
+                                    <Label text="MailId" />
+                                    <Input id="mailId" value="{MailId}"/>
+                                    <Label text="MobileNo" />
+                                    <Input id="mobNo" value="{MobileNo}"/>
+                                    <Label text="SAPUserId" />
+                                    <Input id="SAPID" value="{SAPUserId}"/>
+                                </f:content>
+                            </f:SimpleForm> -->
+                            <f:Form id="FormChange354" editable="true">
+                                <f:title>
+                                    <core:Title text="User Info" />
+                                </f:title>
+                                <f:layout>
+                                    <!-- <f:ColumnLayout/> -->
+                                    <f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" />
+                                </f:layout>
+                                <!-- <f:formContainers path="{'/userInfo', parameters : {$$updateGroupId : 'myGroup'}" length="1">
+                                    <f:FormContainer>
+                                        <f:formElements>
+                                            <f:FormElement label="Name">
+                                                <f:fields>
+                                                    <Input value="{Name}" id="name"/>
+                                                </f:fields>
+                                            </f:FormElement>
+                                            <f:FormElement label="Mail Id">
+                                                <f:fields>
+                                                    <Input value="{MailId}" id="MailId"/>
+                                                </f:fields>
+                                            </f:FormElement>
+                                            <f:FormElement label="Mobile No.">
+                                                <f:fields>
+                                                    <Input value="{MobileNo}" id="MobileNo"/>
+                                                </f:fields>
+                                            </f:FormElement>
+                                            <f:FormElement label="SAPUser Id">
+                                                <f:fields>
+                                                    <Input value="{SAPUserId}" id="SAPUserId"/>
+                                                </f:fields>
+                                            </f:FormElement>
+                                        </f:formElements>
+                                    </f:FormContainer>
+                                </f:formContainers> -->
+                            </f:Form>
+                        </VBox>
+                    </content>
+                    <footer>
+                        <Toolbar>
+                            <ToolbarSpacer/>
+                            <Button type="Emphasized" text="Save" press="onPressSave" />
+                            <Button text="Cancel" press="onPressCancel" />
+                        </Toolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
