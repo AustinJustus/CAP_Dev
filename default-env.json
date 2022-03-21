@@ -1,5 +1,28 @@
 {
 	"VCAP_SERVICES": {
+        "xsuaa": [{
+            "name":"userRegPortal-xsuaa-service",
+            "label": "xsuaa",
+            "tags":["xsuaa"],
+            "credentials":{                
+                    "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+                    "clientid": "sb-userregportal!t88169",
+                    "clientsecret": "vTbwpmw4AbkZZKZGbe5xHvl0fCA=",
+                    "credential-type": "instance-secret",
+                    "identityzone": "73a2bac0trial",
+                    "identityzoneid": "43bee8fb-bf58-46d3-8197-6e3ac9058857",
+                    "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+                    "subaccountid": "43bee8fb-bf58-46d3-8197-6e3ac9058857",
+                    "tenantid": "43bee8fb-bf58-46d3-8197-6e3ac9058857",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.eu10.hana.ondemand.com",
+                    "url": "https://73a2bac0trial.authentication.eu10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAppluOg++xxEoQ9cO/bKAonpVtjfF/IVwGcU+Qd1o713VxRd/FnQ0Z44qiJSDNsajFrqjGUJOK9bq3BdAj3ivIbbYpHGc4rEroQGHx37F6weHJQ5J2o5t/ZWEKjY/csp6ZDt5iFc8I28Vu1PcuUAHHwXI5Hao2w21kZ2nHvwSbd3s+o/Oq9xu4ZfLwl6c1A1EI61ZbyOMdJiT6onKezSYKmtpUSwtGG1dzCcsnPj2Yqo3pbaV4a8MXCeLGGcnIToFqAIK/9lQqCCqx+szLj5olzgsB2tzknL9jqcqRbMT2czCXbU/xXPqZlUl3nvWTZAvBLnjjzyQSyP5SbTA4fpi0QIDAQAB-----END PUBLIC KEY-----",
+                    "xsappname": "userregportal!t88169",
+                    "zoneid": "43bee8fb-bf58-46d3-8197-6e3ac9058857"                   
+            }
+        }],
+        
 		"hana": [
 			{
 				"name": "userRegPortal-hdiuserRegPortF1Zm6noD2XFHtcPo8oBw",

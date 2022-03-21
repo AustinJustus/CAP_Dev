@@ -5,15 +5,18 @@ version: 1.0.0
 modules:
 - name: userRegPortal-srv
   type: nodejs
-  path: srv
+  path: .
   requires:
   - name: userRegPortal-db
+  - name: uaa_userRegPortal
   provides:
   - name: srv-api
     properties:
-      srv-url: ${default-url}
-  parameters:
-    buildpack: nodejs_buildpack
+      srv-url: '${default-url}'
+  build-parameters:
+      ignore: ["*default-env.json*", "*/db/*.env*", "/node_modules/","./db/node_modules", "./app"]
+ # parameters:
+  #  buildpack: nodejs_buildpack
 - name: userRegPortal-db-deployer
   type: hdb
   path: db
@@ -21,6 +24,8 @@ modules:
   - name: userRegPortal-db
   parameters:
     buildpack: nodejs_buildpack
+  build-parameters:
+    ignore: ["default-env.json", ".env", "*node_modules*"]
 - name: app
   type: approuter.nodejs
   path: app
