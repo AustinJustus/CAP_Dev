@@ -1,0 +1,63 @@
+{
+  "namespace": "ca.registrationprotal",
+  "definitions": {
+    "ca.registrationprotal.userInfo": {
+      "kind": "entity",
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "Name": {
+          "type": "cds.String"
+        },
+        "MailId": {
+          "type": "cds.String"
+        },
+        "MobileNo": {
+          "type": "cds.String"
+        },
+        "SAPUserId": {
+          "type": "cds.String"
+        }
+      }
+    },
+    "CatalogService": {
+      "@source": "portal_srv.cds",
+      "kind": "service"
+    },
+    "CatalogService.userInfo": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "ca.registrationprotal.userInfo"
+          ]
+        }
+      },
+      "elements": {
+        "ID": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "Name": {
+          "type": "cds.String"
+        },
+        "MailId": {
+          "type": "cds.String"
+        },
+        "MobileNo": {
+          "type": "cds.String"
+        },
+        "SAPUserId": {
+          "type": "cds.String"
+        }
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v2.12.0",
+    "flavor": "inferred"
+  },
+  "$version": "2.0"
+}
