@@ -1,0 +1,34 @@
+<mvc:View controllerName="frontend.controller.Signup"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <VBox class="sapUiSmallMargin">
+                            <f:Form id="FormChange354" editable="true">
+                                <f:title>
+                                    <core:Title text="User Info" />
+                                </f:title>
+                                <f:layout>
+                                    <f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" />
+                                </f:layout>
+                            </f:Form>
+                        </VBox>
+                    </content>
+                    <footer>
+                        <Toolbar>
+                            <ToolbarSpacer/>
+                            <Button type="Emphasized" text="Save" press="onPressSave" />
+                            <Button text="Cancel" press="onPressCancel" />
+                        </Toolbar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
