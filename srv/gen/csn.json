@@ -24,7 +24,8 @@
     },
     "CatalogService": {
       "@source": "portal_srv.cds",
-      "kind": "service"
+      "kind": "service",
+      "@requires": "authenticated-user"
     },
     "CatalogService.userInfo": {
       "kind": "entity",
